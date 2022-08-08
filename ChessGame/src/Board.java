@@ -18,10 +18,11 @@ public class Board {
 		
 		//creates the board 
 		public void init(JFrame frame) {
+			int j = 0;
 			for(int i = 0; i < 64; i++) {
 				//i is for the rows 
 				//j is for the tiles
-				 int j = 0;
+				
 				 
 				 //creates a new tile
 				 Tiles tile = new Tiles(i,j);
@@ -46,6 +47,8 @@ public class Board {
 				else if(i % 2 == 0 && j % 2 != 0 ) {
 					//dark brown I think
 					tile.tiles.setBackground(new Color(93, 67, 44));
+				
+					
 				}
 				else if(i % 2 != 0 && j % 2 != 0 ) {
 					//brown I think
