@@ -1,8 +1,7 @@
 import java.awt.Color;
+import java.awt.Point;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class Board {
@@ -11,13 +10,15 @@ public class Board {
 	
 	//keeps track of the images
 	public ImageIcon[] images = new ImageIcon[12];
-	
+	Point tileClicked;
 		Board(){
 			
 		}
 		
 		//creates the board 
 		public void init(JFrame frame) {
+			
+			
 			int j = 0;
 			for(int i = 0; i < 64; i++) {
 				//i is for the rows 
@@ -61,5 +62,14 @@ public class Board {
 				frame.add(tile.tiles);
 	 
 			}
+		}
+		
+		
+		public void setTileClicked(Point clicked) {
+			tileClicked = clicked;
+		}
+		
+		public Point getTileClicked() {
+			return tileClicked;
 		}
 }

@@ -15,4 +15,6 @@ public class Tiles {
 	public Point getTilesPosition() {
 		return coords;
 	}
+	
+	//add action listener to all the buttons 
 }
