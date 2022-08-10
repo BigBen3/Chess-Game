@@ -1,9 +1,15 @@
+import javax.swing.JButton;
 
-public class Pawn extends Piece{
-
-	Pawn(Tiles tile, String color) {
-		super(tile, color);
+public class Pawn {
+	private JButton button;
+	private char color;
+	Pawn(JButton button, char color) {
+		this.button = button;
+		this.color = color;
 		// TODO Auto-generated constructor stub
 	}
-
+	public JButton getButton() {
+		return button;
+	
+}
 }

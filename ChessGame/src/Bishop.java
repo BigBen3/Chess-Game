@@ -1,9 +1,15 @@
+import javax.swing.JButton;
 
-public class Bishop extends Piece{
-
-	Bishop(Tiles tile, String color) {
-		super(tile, color);
+public class Bishop {
+	private JButton button;
+	private char color;
+	Bishop(JButton button, char color) {
+		this.button = button;
+		this.color = color;
 		// TODO Auto-generated constructor stub
 	}
-
+	public JButton getButton() {
+		return button;
+	
+}
 }

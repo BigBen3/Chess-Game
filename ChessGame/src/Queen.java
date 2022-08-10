@@ -1,9 +1,15 @@
+import javax.swing.JButton;
 
-public class Queen extends Piece{
-
-	Queen(Tiles tile, String color) {
-		super(tile, color);
+public class Queen{
+	private JButton button;
+	private char color;
+	Queen(JButton button, char color) {
+		this.button = button;
+		this.color = color;
 		// TODO Auto-generated constructor stub
 	}
-
+	public JButton getButton() {
+		return button;
+	
+}
 }
