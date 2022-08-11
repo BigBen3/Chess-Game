@@ -6,7 +6,7 @@ import javax.swing.JButton;
 public class Tiles {
 
 	private Point coords;
-	 JButton tiles;
+	private JButton tiles;
 	private boolean hasPiece = false;
 	Tiles( int x, int y ){
 		tiles = new JButton();
@@ -29,6 +29,11 @@ public class Tiles {
 	
 	public void addPiece(JButton button) {
 		tiles.add(button);
+	}
+	
+	
+	public JButton getButton() {
+		return  tiles;
 	}
 	//add action listener to all the buttons 
 }
