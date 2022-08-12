@@ -8,7 +8,7 @@ public class Tiles {
 	private Point coords;
 	private JButton tiles;
 	private boolean hasPiece = false;
-	Tiles( int x, int y ){
+	Tiles( int y, int x  ){
 		tiles = new JButton();
 		tiles.setBorder(BorderFactory.createEtchedBorder());
 		coords = new Point(x,y);

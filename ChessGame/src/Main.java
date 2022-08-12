@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		//setting up the frame
 		JFrame frame = new JFrame();
-		frame.setSize(420,420);
+		frame.setSize(850,850);
 		frame.setLayout(null);
 		frame.setTitle("Test program");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
